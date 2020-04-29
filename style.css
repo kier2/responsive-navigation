@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Utilities */
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 130px;
+    padding: 0 0 0 1.2rem;
+}
+
+.nav-menu li {
+    display: inline;
+    padding: 0 1.6rem;
+}
+
+.nav-menu li a {
+    color: #222;
+    padding-bottom: 0.4rem;
+    transition: ease-in-out .2s;
+}
+
+.nav-menu li a:hover {
+    color: #54bf98;
+    border-bottom: 3px solid #54bf98;
+}
+
+.nav-menu li a.active {
+    color: #54bf98;
+    border-bottom: 3px solid #54bf98;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.hamburger-btn:focus {
+    border: 0;
+    outline: 0;
+}
+
+/* Sidebar menu styling */
+
+.mobile-menu {
+    position: fixed;
+    background: #222;
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: all ease-in-out .5s;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 14px;
+    left: 35px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sidebar-inner {
+    margin-top: 5rem;
+}
+
+.sidebar-inner a {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    border: 0;
+    transition: ease-in-out .2s;
+}
+
+.sidebar-inner a:hover {
+    border-left: 3px solid #54bf98;
+    background-color: #333;
+}
+
+@media (max-width:768px) {
+    header {
+        justify-content: space-between;
+    }
+    .mobile-menu {
+        display: inherit;
+    }
+    .navbar {
+        display: none;
+    }
+    .hamburger-btn {
+        display: block!important;
+        border: 0;
+        background: transparent;
+    }
+    .hamburger-btn i {
+        padding: 0 1rem;
+        color: #222;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}

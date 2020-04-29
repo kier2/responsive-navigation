@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navigation with sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/mylogo5.png" alt="" />
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <button id="toggleNav" class="hamburger-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <div id="sidebar" class="mobile-menu">
+      <span id="closeBtn">&times;</span>
+      <div class="sidebar-inner">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
